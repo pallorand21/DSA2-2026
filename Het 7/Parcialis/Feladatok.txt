@@ -1,0 +1,17 @@
+(Dungeon)
+Egy játékos vagy egy pályán. Útközben találkozhatsz ellenséggel illetve téged erősítő pontokkal. Írj egy síkbacktracking algoritmust ami célja lesz hogy úgy járd be a pályát hogy a lehetőlegtöbb erősítést felvedd, hogy a pálya végén levő főellenséget legyőzd. A pálya egy NxN matrix ahol az 1-es szám a fal,2-es az erősítés, 3 az ellenség és 9 a főellenség. Olvasd be egy bemeneti fájlból ezek értékeit
+
+
+
+(Kombináció)
+Bevásárolni készülsz egy adott budgettel de viszont nem tudod mit szerentnél még venni. Olvass be termékeket áraival együtt és írj egy kombinációs backtracking algoritmus ami a budgetedhez igazodva bevásárli listát ír neked. Határozd meg minden vásárlás után a maradék pénzt is
+
+
+
+(Variáció)
+Gitáros vagy egy bandában.  Van n darab gitárpedálod de fellépéshelytől változik a pedálstock(hány pedált rakhatsz a tartóba) helyed.  Írj egy backtracking algoritmus ami a stock méretéhez igazodva listát csinál a lehetséges elhelyezésről. Fontos hogy a sorrend számit illetve hogy egy adott pedál a sor elejére és másik a sor végére kell kerüljön
+
+
+
+(Permutáció)
+Fellépő vagy egy koncerted előtt és utolsó percben kiesett(vagy bejött) egy zene a fellépési listádba. Irj egy backtracking algoritmust ami egy setlistet csinál a megadott zenéidből. Fontos tudni, hogy minden zenének van egy úgymond helye a listán például az ‘intro’ kötelezően első kell legyen, ‘banger’ pedig utolsó. A többi szám ‘interlude’ jelzővel van ellátva ami a közteset jelenti. A megadott kritériumok betartásával generálj listákat
