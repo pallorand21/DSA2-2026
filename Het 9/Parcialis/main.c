@@ -28,9 +28,17 @@ int main(void) {
         //printf("%d\n",tomb[i]);
     }
     qsort(tomb,n,sizeof(int),rendez);
-    
-
-
+    printf("Rendezett tomb: ");
+    for ( int i = 0; i < n ; ++i) {
+        printf("%d ",tomb[i]);
+    }
+    int talalat = binarysearch(tomb,0,n,2);
+    if (talalat == 1) {
+        printf("talalat");
+    }
+    else {
+        printf("talalat nincs");
+    }
 
     return 0;
 }
@@ -39,7 +47,11 @@ int binarysearch(int arr[], int left, int right, int target) {
     if (target == arr[mid]) {
         return mid;
     }
+    if (target > arr[mid]) {
+        return binarysearch(arr, mid+1, right, target);
+    }
     else {
-        return binarysearch(arr, left, mid, target);
+        return binarysearch(arr, left, mid-1, target);
     }
 }
+
