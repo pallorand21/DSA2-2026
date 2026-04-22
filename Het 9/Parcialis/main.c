@@ -32,14 +32,15 @@ int main(void) {
     for ( int i = 0; i < n ; ++i) {
         printf("%d ",tomb[i]);
     }
-    int talalat = binarysearch(tomb,0,n,2);
-    if (talalat == 1) {
-        printf("talalat");
-    }
-    else {
-        printf("talalat nincs");
-    }
+    printf("keresett szam: ");
+    int keresett;
+    scanf("%d",&keresett);
 
+    int talalat = binarysearch(tomb,0,n,keresett);
+
+    if (talalat>=0) {
+        printf("Talalat indexe: %d",talalat);
+    }
     return 0;
 }
 int binarysearch(int arr[], int left, int right, int target) {
@@ -53,5 +54,6 @@ int binarysearch(int arr[], int left, int right, int target) {
     else {
         return binarysearch(arr, left, mid-1, target);
     }
+
 }
 
