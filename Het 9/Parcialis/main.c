@@ -36,24 +36,22 @@ int main(void) {
     int keresett;
     scanf("%d",&keresett);
 
-    int talalat = binarysearch(tomb,0,n,keresett);
+    int talalat = binarysearch(tomb,0,n-1,keresett);
 
     if (talalat>=0) {
         printf("Talalat indexe: %d",talalat);
     }
+    else {
+        printf("Nincs talalat");
+        return -8;
+    }
     return 0;
 }
+
 int binarysearch(int arr[], int left, int right, int target) {
+    if (left > right) return -1;
     int mid = (left + right) / 2;
-    if (target == arr[mid]) {
-        return mid;
-    }
-    if (target > arr[mid]) {
-        return binarysearch(arr, mid+1, right, target);
-    }
-    else {
-        return binarysearch(arr, left, mid-1, target);
-    }
-
+    if (target == arr[mid]) {return mid;}
+    else if (target > arr[mid]) {return binarysearch(arr, mid + 1, right, target);}
+    else {return binarysearch(arr, left, mid - 1, target);}
 }
-
