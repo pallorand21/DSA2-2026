@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\pallo\Documents\Egyetem\DSA2-2026\DSA2-2026\Het 9\Parciális teszt Select CMakeLists.txt
